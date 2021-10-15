@@ -1,0 +1,20 @@
+<%- include('partials/_header') %>
+    <h1>Bienvenido a YoutubeMini</h1>
+        <div class="container">
+            <div class="row">
+                <% for(var i=0;i<tasks.length; i++){ %>
+                    <div class="col p-2">
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title"><%= tasks[i].title %></h5>
+                            <p class="card-text"><%= tasks[i].description %></p>
+                            <a href="#" class="btn btn-primary">Ver video</a>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+        
+<%- include('partials/_footer') %>
